@@ -1,0 +1,91 @@
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: .5em;
+    margin-bottom: 0.1em;
+}
+
+h2 {
+    font-size: 1em;
+
+}
+
+.projectPage {
+    padding:0;
+}
+
+.overview {
+    margin-top: 2em;
+}
+
+.basicInfo {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 4em;
+    justify-content: flex-end;
+    .smallInfo {
+        .title {
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+        }
+        .info {
+            font-size: .85em;
+            display: block;
+        }
+        .timeframe {
+        }
+        .roles {
+            margin-top: .5em;
+        }
+        .skills {
+            margin-top: .5em;
+        }
+        .collaborators {
+            margin-top: .5em;
+        }
+    }
+    .largeInfo {
+        .title {
+            font-weight: bold;
+            font-size: 1em;
+            text-transform: uppercase;
+            display: block;
+        }
+        .info {
+            font-size: 1em;
+        }
+        .goal {
+            margin-top: 1.5em;
+        }
+        .solution{
+            margin-top: 1.5em;
+        }
+    }
+}
+
+.section {
+    margin-top: 3em;
+    .sectionTitle {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    .quoteRow{
+        background: grey;
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin: 1.5em -15px;
+        .quote {
+            margin: 2em auto;
+            width: 50%;
+            text-align: center;
+        }
+    }
+    .subhead {
+        font-weight: bold;
+        display: block;
+        margin-top: 1.25em;
+        font-size: 1.5em;
+    }
+}
