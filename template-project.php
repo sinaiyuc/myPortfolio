@@ -146,11 +146,47 @@
                                 </div>
                             </div>
 
-                        <?php elseif( get_row_layout() == 'subhead' ): ?>
+                        <?php elseif( get_row_layout() == 'one_image_two_text' ): ?>
                             <div class='container'>
-                                <div class='row'>
-                                    <div class='col-md-6'>
-                                        <span class='subhead'><?php the_sub_field('subhead') ?></span>
+                                <div class='row sectionLayout'>
+                                    <div class='col-md-4'>
+                                        <img class='image' href='<?php the_sub_field('image') ?>' />
+                                    </div>
+                                    <div class='col-md-8'>
+                                        <div class='text'><?php the_sub_field('text') ?></div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php elseif( get_row_layout() == 'one_text_two_image' ): ?>
+                            <div class='container'>
+                                <div class='row sectionLayoutReverse'>
+                                    <div class='col-md-8'>
+                                        <img class='image' href='<?php the_sub_field('image') ?>' />
+                                    </div>
+                                    <div class='col-md-4'>
+                                        <div class='text'><?php the_sub_field('text') ?></div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php elseif( get_row_layout() == 'two_image_one_text' ): ?>
+                            <div class='container'>
+                                <div class='row sectionLayout'>
+                                    <div class='col-md-8'>
+                                        <img class='image' href='<?php the_sub_field('image') ?>' />
+                                    </div>
+                                    <div class='col-md-4'>
+                                        <div class='text'><?php the_sub_field('text') ?></div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php elseif( get_row_layout() == 'two_text_one_image' ): ?>
+                            <div class='container'>
+                                <div class='row sectionLayoutReverse'>
+                                    <div class='col-md-4'>
+                                        <img class='image' href='<?php the_sub_field('image') ?>' />
+                                    </div>
+                                    <div class='col-md-8'>
+                                        <div class='text'><?php the_sub_field('text') ?></div>
                                     </div>
                                 </div>
                             </div>
