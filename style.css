@@ -8510,6 +8510,39 @@ h1 {
 h2 {
   font-size: 1em; }
 
+.projects {
+  transition: .2s all;
+  padding-bottom: 15px; }
+
+.projects:hover {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: black;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3); }
+
+.myName {
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: 20px;
+  margin-top: 70px;
+  font-weight: 700; }
+
+.myDesc {
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 1.2em;
+  margin: 20px;
+  margin-bottom: 70px; }
+
+.heroImage {
+  max-height: 500px;
+  overflow: hidden; }
+
 .projectPage {
   padding: 0; }
 
@@ -8546,11 +8579,53 @@ h2 {
   .basicInfo .largeInfo .solution {
     margin-top: 1.5em; }
 
+a {
+  text-decoration: none; }
+
+/*Gray Link Styling*/
+a:hover {
+  color: #666666;
+  text-decoration: none; }
+
+a:visited {
+  color: #999999; }
+
+a:hover {
+  color: #666666;
+  text-decoration: none; }
+
+a {
+  color: #999999; }
+
+a {
+  -webkit-transition-timing-function: ease;
+  -webkit-transition: .5s;
+  /* Safari */
+  transition: .5s; }
+
+.titleHome {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 10px; }
+
+.backButton {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  padding: 10px 30px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  font-size: 1.5em;
+  font-weight: 100; }
+
 .section {
   margin-top: 3em; }
   .section .sectionTitle {
     font-size: 3em;
     font-weight: bold; }
+  .section .textBlock {
+    margin: 0px 10px; }
   .section .quoteRow {
     background: grey;
     color: white;
@@ -8566,9 +8641,6 @@ h2 {
     display: block;
     margin-top: 1.25em;
     font-size: 1.5em; }
-
-.sectionLayoutReverse {
-  flex-direction: row-reverse; }
 
 body {
   background: white; }
